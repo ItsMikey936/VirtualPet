@@ -1,0 +1,6 @@
+# Runtime
+streamlit>=1.37
+
+# Development
+pytest>=8.0
+ruff>=0.6

@@ -1,0 +1,23 @@
+[project]
+name = "virtualpet"
+version = "1.0.0"
+description = "A single-player tamagotchi built with pure Python and Streamlit"
+requires-python = ">=3.11"
+dependencies = ["streamlit>=1.37"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
